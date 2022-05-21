@@ -1,0 +1,461 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat:wght@400;500;600;700&family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+/* 
+font-family: 'Amatic SC', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg,rgb(227, 141, 141), rgb(200, 219, 152));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Shadows into Light', cursive;
+    padding: 1em;
+    font-size: 3em;
+    color: rgb(12, 0, 241);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-shadow: rgb(12, 2, 33) 1px 1px;
+}
+
+.intro > img{
+    width: 10em;
+    padding: 1em;
+    border-radius: 1.6em;
+    /* margin-top: 3em; */
+    animation: dog 1s ease-in-out forwards;
+    position: relative;
+}
+
+@keyframes dog { 
+
+    0%{
+        
+        transform: translateX(-250%);
+    }
+
+    100%{
+        align-self: center;
+    }
+}
+
+.intro > p{
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-family: 'Shadows into Light', cursive;
+    font-weight: bolder;   
+    font-size: 1.5em;
+    margin-left: 10em;
+    margin-right: 10em;
+    text-align: justify;
+}
+
+.scream{
+    margin: 1.5em;
+}
+
+.intro > .note > span{
+    color: rgb(255, 19, 19);
+    font-size: 1.5em;
+}
+
+.intro > .btn-btn-scroll{
+    width: 14em;
+    padding: 1em;
+    margin: 10px;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: transparent;
+    border: transparent;
+    background-color: rgba(255, 0, 0, 0.592);
+    color: white;
+    box-shadow:  #800f0f 6px 6px 6px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+.btn-btn-scroll:active{
+    background-color: red;
+    box-shadow: none;
+    transition-duration: 300ms;
+    transform: translateX(6px) translateY(6px);   
+}
+
+    
+/* Gallery */
+
+.gallery-sect{
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 100px;
+    background: linear-gradient(240deg,rgb(200, 219, 152), rgb(227, 141, 141));
+}
+
+.gallery-sect > a > img{
+    width: 20rem;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+/* Footnote */
+
+.footnote{
+    background: linear-gradient(120deg, rgb(227, 141, 141), rgb(200, 219, 152));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footnote > p{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(247, 215, 172);
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+footer > p > span{
+    font-size: 1em;
+}
+
+/* Under 800px */
+
+@media(max-width: 800px) and  (min-width:401px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .intro{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(120deg,rgb(227, 141, 141), rgb(200, 219, 152));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        font-family: 'Shadows into Light', cursive;
+        padding: 1em;
+        font-size: 3em;
+        color: rgb(12, 0, 241);
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-shadow: rgb(12, 2, 33) 1px 1px;
+        text-align: center;
+    }
+
+    .intro > img{
+        width: 10em;
+        padding: 1em;
+        border-radius: 1.6em;
+        /* margin-top: 3em; */
+        animation: dog 1s ease-in-out forwards;
+        position: relative;
+    }
+
+    @keyframes dog { 
+
+        0%{
+            
+            transform: translateX(-100%);
+        }
+
+        100%{
+            align-self: center;
+        }
+    }
+
+    .intro > p{
+        text-align: center;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        font-family: 'Shadows into Light', cursive;
+        font-weight: bolder;   
+        font-size: 1.5em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        text-align: justify;
+    }
+
+    .scream{
+        margin: 1.5em;
+    }
+
+    .intro > .note > span{
+        color: rgb(255, 19, 19);
+        font-size: 1.5em;
+    }
+
+    .intro > .btn-btn-scroll{
+        width: 14em;
+        padding: 1em;
+        margin: 10px;
+        margin-top: 1.5em;
+        text-transform: uppercase;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1em;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border: transparent;
+        border: transparent;
+        background-color: rgba(255, 0, 0, 0.592);
+        color: white;
+        box-shadow:  #800f0f 6px 6px 6px;
+        transition: transform 200ms, box-shadow 200ms;
+    }
+
+    .btn-btn-scroll:active{
+        background-color: red;
+        box-shadow: none;
+        transition-duration: 300ms;
+        transform: translateX(6px) translateY(6px);   
+    }
+
+        
+    /* Gallery */
+
+    .gallery-sect{
+        padding-top: 5em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 1 1 100px;
+        background: linear-gradient(240deg,rgb(200, 219, 152), rgb(227, 141, 141));
+    }
+
+    .gallery-sect > a > img{
+        width: 10rem;
+        padding: 0.1em;
+    }
+
+    /* Footnote */
+    
+    .footnote{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(120deg,rgb(227, 141, 141), rgb(200, 219, 152));
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .footnote > p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+    }
+
+    /* Footer */
+
+    footer{
+        background-color: rgb(247, 215, 172);
+    }
+
+    footer > p > a{
+        text-decoration: none;
+        color: rgb(63, 63, 63);
+        font-weight: 600;
+    }
+
+    footer > p > span{
+        font-size: 0.7em;
+    }
+
+}
+
+/* Under 400px */
+@media(max-width: 400px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .intro{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(120deg,rgb(227, 141, 141), rgb(200, 219, 152));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        font-family: 'Shadows into Light', cursive;
+        padding: 1em;
+        font-size: 3em;
+        color: rgb(12, 0, 241);
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-shadow: rgb(12, 2, 33) 1px 1px;
+        text-align: center;
+    }
+
+    .intro > img{
+        width: 10em;
+        padding: 1em;
+        border-radius: 1.6em;
+        /* margin-top: 3em; */
+        animation: dog 1s ease-in-out forwards;
+        position: relative;
+    }
+
+    @keyframes dog { 
+
+        0%{
+            
+            transform: translateX(-100%);
+        }
+
+        100%{
+            align-self: center;
+        }
+    }
+
+    .intro > p{
+        text-align: center;
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+        font-family: 'Shadows into Light', cursive;
+        font-weight: bolder;   
+        font-size: 1.5em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        text-align: justify;
+    }
+
+    .scream{
+        margin: 1.5em;
+    }
+
+    .intro > .note > span{
+        color: rgb(255, 19, 19);
+        font-size: 1.5em;
+    }
+
+    .intro > .btn-btn-scroll{
+        width: 14em;
+        padding: 1em;
+        margin: 10px;
+        margin-top: 1.5em;
+        text-transform: uppercase;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1em;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border: transparent;
+        border: transparent;
+        background-color: rgba(255, 0, 0, 0.592);
+        color: white;
+        box-shadow:  #800f0f 6px 6px 6px;
+        transition: transform 200ms, box-shadow 200ms;
+    }
+
+    .btn-btn-scroll:active{
+        background-color: red;
+        box-shadow: none;
+        transition-duration: 300ms;
+        transform: translateX(6px) translateY(6px);   
+    }
+
+        
+    /* Gallery */
+
+    .gallery-sect{
+        padding-top: 5em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 1 1 100px;
+        background: linear-gradient(240deg,rgb(200, 219, 152), rgb(227, 141, 141));
+    }
+
+    .gallery-sect > a > img{
+        width: 10rem;
+        padding: 0.1em;
+    }
+
+    /* Footnote */
+    
+    .footnote{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(120deg,rgb(227, 141, 141), rgb(200, 219, 152));
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .footnote > p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+    }
+
+    /* Footer */
+
+    footer{
+        background-color: rgb(247, 215, 172);
+    }
+
+    footer > p > a{
+        text-decoration: none;
+        color: rgb(63, 63, 63);
+        font-weight: 600;
+    }
+
+    footer > p > span{
+        font-size: 0.7em;
+    }
+
+}
+
+
